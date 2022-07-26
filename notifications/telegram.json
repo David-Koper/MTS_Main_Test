@@ -3,7 +3,7 @@
     "project": "some project",
     "environment": "some env",
     "comment": "some comment",
-    "reportLink": "${BUILD_URL}",
+    "reportLink": "",
     "language": "en",
     "messenger": "telegram",
     "allureFolder": "build/allure-report/",
@@ -12,6 +12,6 @@
   "telegram": {
     "token": "5452242717:AAGMIKMA724uuoiSZT6eAVeD9-2yOrl34Yc",
     "chat": "-1001568937582",
-    "replyTo": "265369627"
+    "replyTo": ""
   }
 }
