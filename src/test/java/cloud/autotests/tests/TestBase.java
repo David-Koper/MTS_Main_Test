@@ -12,10 +12,13 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
+import pages.SearchPage;
 
 
 @ExtendWith({AllureJunit5.class})
 public class TestBase {
+
+    SearchPage searchPage = new SearchPage();
     @BeforeAll
     static void beforeAll() {
         DriverSettings.configure();

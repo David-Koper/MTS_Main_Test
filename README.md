@@ -1,7 +1,7 @@
 # Проект по тестированию главной страницы сайта "МТС. Частным клиентам"
-> <a target="_blank" href="https://rosatom-career.ru/">Ссылка на единый портал</a>
+> <a target="_blank" href="https://nnov.mts.ru/personal/">Ссылка на главную страницу</a>
 
-![This is an image](/design/images/2022_07_26_14_59_10_Window.png)
+![This is an image](/design/images/2022_07_26_19_36_44_Window.png)
 #### Список проверок, реализованных в автотестах
 - [x] Наличие требуемых заголовков в верхнем меню страницы
 - [x] Наличие заданных пунктов подменю для меню "Молодым специалистам"
@@ -21,6 +21,23 @@ Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 
 # Запуск автотестов выполняется на сервере Jenkins
 
+> <a target="_blank" href="https://jenkins.autotests.cloud/job/MTS_Main_Test/">Ссылка на проект в Jenkins</a>
+
+### Параметры сборки
+
+* login (default user1)
+* password (default 1234)
+* test_group (default ui_tests). Параметр определяет группу тестов для запуска.
+
+### Для запуска автотестов в Jenkins
+#### 1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/MTS_Main_Test/">проект</a>
+
+![This is an image](/design/images/jenkins1.png)
+
+#### 2. Выбрать пункт **Собрать с параметрами**
+#### 3. В случае необходимости изменить параметры, выбрав значения из выпадающих списков
+#### 4. Нажать **Собрать**
+#### 5. Результат запуска сборки можно посмотреть в отчёте Allure
 
 
 Run tests with filled remote.properties:
