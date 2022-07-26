@@ -6,17 +6,19 @@ import org.aspectj.apache.bcel.classfile.Module;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.files.DownloadActions.click;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
 public class GeneratedTests extends TestBase {
     @Test
-    @DisplayName("MTS_Test")
-    void generatedTest() {
+    @DisplayName("MTS_Pay_Test")
+    void payTest() {
         step("Open https://nnov.mts.ru/personal", () -> {
             open("https://nnov.mts.ru/personal");
         });
@@ -30,6 +32,21 @@ public class GeneratedTests extends TestBase {
         });
     }
 
+    @Test
+    @DisplayName("MTS_allProducts_Test")
+    void subMenuTest() {
+        step("Open https://nnov.mts.ru/personal", () -> {
+            open("https://nnov.mts.ru/personal");
+        });
+
+        step("Click on submenu button", () -> {
+            $(".prp-products-widget-container").click();
+        });
+
+        step("Pay modal should be visible", () -> {
+            $(".prp-sidebar").shouldBe(visible);
+        });
+    }
     @Test
     @DisplayName("Page title should have header text")
     void titleTest() {
