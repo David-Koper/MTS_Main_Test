@@ -39,11 +39,11 @@ public class GeneratedTests extends TestBase {
             open("https://nnov.mts.ru/personal");
         });
 
-        step("Click on submenu button", () -> {
+        step("Click on all products button", () -> {
             $(".prp-products-widget-container").click();
         });
 
-        step("Pay modal should be visible", () -> {
+        step("All products modal should be visible", () -> {
             $(".prp-sidebar").shouldBe(visible);
         });
     }
