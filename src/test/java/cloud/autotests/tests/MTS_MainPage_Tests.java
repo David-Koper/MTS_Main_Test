@@ -1,21 +1,16 @@
 package cloud.autotests.tests;
 
 import cloud.autotests.helpers.DriverUtils;
-import io.qameta.allure.Description;
-import org.aspectj.apache.bcel.classfile.Module;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
-import static com.codeborne.selenide.files.DownloadActions.click;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
-public class GeneratedTests extends TestBase {
+public class MTS_MainPage_Tests extends TestBase {
     @Test
     @DisplayName("MTS_Pay_Test")
     void payTest() {
