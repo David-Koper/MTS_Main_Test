@@ -1,27 +1,21 @@
-# Проект по тестированию главной страницы сайта "МТС. Частным клиентам"
-<a target="_blank" href="https://nnov.mts.ru/personal">Ссылка на главную страницу</a>
+# Project in Allure TestOps with manual & automated tests
+<a target="_blank" href="https://allure.autotests.cloud/project/%s">allure.autotests.cloud/project/%s</a> (ask admin@qa.guru for access)
 
-![This is an image](design/images/2022_07_26_19_36_44_Window.png)
-
-#### Список проверок, реализованных в автотестах
-- [x] Наличие требуемых заголовков в верхнем меню страницы
-- [x] Наличие заданных пунктов подменю для меню ""
-- [x] Видимость блока оплаты при нажатии кнопки "Оплата" в меню сайта
-- [x] Наличие имиджевого текста на первой странице
-- [x] Выполнение поиска заданной вакансии. Проверка, что открылась соответствующая страница и содержимое строки поиска соответствует заданному
-#### Список проверок ручного тестирования
-- [x] Визуальная характеристика главной страницы сайта, соответствие единому корпоративному стилю
-- [x] Адаптивность вёрстки
-- [x] Соответствие вёрстки сайта общепринятым стандартам
-
-## Проект реализован с использованием
-Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure TestOps Telegram Jira
-
-![This is an image](/design/icons/Java.png)![This is an image](/design/icons/Gradle.png)![This is an image](/design/icons/Intelij_IDEA.png)![This is an image](/design/icons/Selenide.png)![This is an image](/design/icons/Selenoid.png)![This is an image](/design/icons/JUnit5.png)![This is an image](/design/icons/Jenkins.png)![This is an image](/design/icons/Allure_Report.png)![This is an image](/design/icons/AllureTestOps.png)![This is an image](/design/icons/Telegram.png)![This is an image](/design/icons/Jira.png)
+# Jenkins job
+<a target="_blank" href="https://jenkins.autotests.cloud/job/%s">jenkins.autotests.cloud/job/%s</a>
 
 
-# Запуск автотестов выполняется на сервере Jenkins
+# USAGE examples
 
+### For run remote tests need fill remote.properties or to pass value:
+
+* browser (default chrome)
+* browserVersion (default 89.0)
+* browserSize (default 1920x1080)
+* browserMobileView (mobile device name, for example iPhone X)
+* remoteDriverUrl (url address from selenoid or grid)
+* videoStorage (url address where you should get video)
+* threads (number of threads)
 
 
 Run tests with filled remote.properties:
