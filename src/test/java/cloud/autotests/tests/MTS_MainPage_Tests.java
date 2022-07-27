@@ -74,7 +74,7 @@ public class MTS_MainPage_Tests extends TestBase {
         });
     }
 
-    @ValueSource(strings = {"нетариф", "НЕТАРИФ", "НеТаРиФ", "Junior", "JuNioR"})
+    @ValueSource(strings = {"нетариф", "НЕТАРИФ", "НеТаРиФ", "НЕТА", "Junior", "JuNioR"})
     @ParameterizedTest(name = "МТС, при вводе {0} в результатах есть поле НЕТАРИФ Junior, а так же фильтр Тарифы")
     void valueTest(String testData) {
         searchPage.openPage()
