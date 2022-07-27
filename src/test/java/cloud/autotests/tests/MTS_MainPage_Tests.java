@@ -2,6 +2,7 @@ package cloud.autotests.tests;
 
 import cloud.autotests.helpers.DriverUtils;
 import com.codeborne.selenide.Configuration;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -16,6 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class MTS_MainPage_Tests extends TestBase {
     @Test
+    @Disabled
     @DisplayName("MTS_Pay_Test")
     void payTest() {
         step("Open https://nnov.mts.ru/personal", () -> {
@@ -32,6 +34,7 @@ public class MTS_MainPage_Tests extends TestBase {
     }
 
     @Test
+    @Disabled
     @DisplayName("MTS_allProducts_Test")
     void subMenuTest() {
         step("Open https://nnov.mts.ru/personal", () -> {
