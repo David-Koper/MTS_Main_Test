@@ -77,7 +77,7 @@ public class MTS_MainPage_Tests extends TestBase {
             assertThat(consoleLogs).doesNotContain(errorText);
         });
     }
-
+    @Disabled
     @ValueSource(strings = {"нетариф", "НЕТАРИФ", "НеТаРиФ", "НЕТА", "Junior", "JuNioR"})
     @ParameterizedTest(name = "МТС, при вводе {0} в результатах есть поле НЕТАРИФ Junior, а так же фильтр Тарифы")
     void valueTest(String testData) {
