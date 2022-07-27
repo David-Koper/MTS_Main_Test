@@ -38,7 +38,6 @@ public class TestBase {
         AllureAttachments.addPageSource();
 //        AllureAttachments.attachNetwork(); // todo
         AllureAttachments.addBrowserConsoleLogs();
-        Configuration.pageLoadTimeout=5000;
 
         Selenide.closeWebDriver();
 
